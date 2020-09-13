@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.CapNhatTaiKhoanActivity">
+    <androidx.appcompat.widget.Toolbar
+
+        android:id="@+id/toolbarThemTK"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:titleTextColor="#ffff"
+        android:background="#30645F"
+        app:title="Thêm tài khoản"></androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+
+        android:layout_marginTop="20dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+        <TextView
+            android:textColor="#050505"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Tên đăng nhập"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+        <EditText
+            android:background="@drawable/duongvien"
+            android:id="@+id/editTenTK"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:inputType="textCapWords"
+            android:padding="10dp"
+            android:textColor="#050505"
+            android:textColorHint="@color/input_register_hint" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textColor="#050505"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Mật khẩu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+        <EditText
+            android:background="@drawable/duongvien"
+            android:id="@+id/editMatKhau"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:inputType="textCapWords"
+            android:padding="10dp"
+            android:textColor="#050505"
+            android:textColorHint="@color/input_register_hint" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textColor="#050505"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+        <EditText
+            android:background="@drawable/duongvien"
+            android:id="@+id/editEmail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:inputType="textCapWords"
+            android:padding="10dp"
+            android:textColor="#050505"
+            android:textColorHint="@color/input_register_hint" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textColor="#050505"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Địa chỉ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+        <EditText
+            android:background="@drawable/duongvien"
+            android:id="@+id/editDiaChi"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:inputType="textCapWords"
+            android:padding="10dp"
+            android:textColor="#050505"
+            android:textColorHint="@color/input_register_hint" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textColor="#050505"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Điện thoại"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+        <EditText
+            android:background="@drawable/duongvien"
+            android:id="@+id/editDienThoai"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords"
+            android:padding="10dp"
+            android:textColor="#050505"
+            android:textColorHint="@color/input_register_hint" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textColor="#050505"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Quyền"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+        <Spinner
+            android:background="@drawable/spinner"
+            android:id="@+id/quyen"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:layout_width="140sp"
+            android:layout_height="45sp">
+        </Spinner>
+    </LinearLayout>
+
+    <Button
+        android:background="#30645F"
+        android:textColor="#fff"
+        android:id="@+id/btnThemTK"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Thêm "></Button>
+</LinearLayout>

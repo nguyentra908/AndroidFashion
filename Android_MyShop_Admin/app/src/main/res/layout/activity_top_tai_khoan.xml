@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.TopTaiKhoanActivity">
+    <androidx.appcompat.widget.Toolbar
+        app:titleTextColor="#ffff"
+        app:title="Top 5 tài khoản mua nhiều nhất"
+        android:id="@+id/toolbarTopTK"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#30645F"></androidx.appcompat.widget.Toolbar>
+    <ListView
+        android:id="@+id/listviewTopTK"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ></ListView>
+</LinearLayout>

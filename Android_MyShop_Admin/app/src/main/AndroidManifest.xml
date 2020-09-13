@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android_myshop_admin">
+
+    <application
+        android:largeHeap="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activity.TopSanPhamActivity"></activity>
+        <activity android:name=".Activity.TopTaiKhoanActivity" />
+        <activity android:name=".Activity.CapNhatTaiKhoanActivity" />
+        <activity android:name=".Activity.ThemTaiKhoanActivity" />
+        <activity android:name=".Activity.TaiKhoanActivity" />
+        <activity android:name=".Activity.XoaSanPhamActivity" />
+        <activity android:name=".Activity.CapNhatSanPhamActivity" />
+        <activity android:name=".Activity.ThemSanPhamActivity" />
+        <activity android:name=".Activity.ChiTietDonHangActivity" />
+        <activity android:name=".Activity.SanPhamActivity" />
+        <activity android:name=".Activity.DoanhThuActivity" />
+        <activity android:name=".Activity.DonHangActivity" />
+        <activity android:name=".Activity.TrangChuActivity" />
+        <activity android:name=".Activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

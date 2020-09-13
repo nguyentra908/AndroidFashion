@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.DoanhThuActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarDoanhThu"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#30645F"
+        app:titleTextColor="#ffff"
+        app:title="Thống kê "></androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <Button
+
+            android:background="#067469"
+            android:textSize="20sp"
+            android:textColor="#fff"  
+            android:id="@+id/btntopSP"
+            android:text="top 5 sản phẩm bán chạy nhất"
+            android:layout_margin="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"></Button>
+        <Button
+            android:background="#067469"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:id="@+id/btntopTK"
+            android:text="top 5 khách hàng mua nhiều nhất"
+            android:layout_margin="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"></Button>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.CapNhatSanPhamActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarCapNhat"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#30645F"
+        app:titleTextColor="#ffff"
+        app:title="CẬP NHẬT SẢN PHẨM"></androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+<TextView
+    android:textColor="#050505"
+    android:textStyle="bold"
+    android:textSize="20sp"
+    android:text="Tên sản phẩm"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"></TextView>
+        <EditText
+            android:background="@drawable/duongvien"
+            android:id="@+id/editTenSP"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+
+            android:hint="Tên sản phẩm"
+            android:inputType="textCapWords"
+            android:padding="10dp"
+            android:textColor="#050505"
+            android:textColorHint="@color/input_register_hint" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="#050505"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:text="Mã loại sản phẩm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+                <EditText
+
+                    android:id="@+id/editMaLoaiSP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:background="@drawable/duongvien"
+                    android:hint="Mã loại sản phẩm"
+                    android:inputType="textCapWords"
+                    android:padding="10dp"
+                    android:textColor="#050505"
+                    android:textColorHint="@color/input_register_hint" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginLeft="50dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="#050505"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:text="Giá"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+                <EditText
+
+                    android:id="@+id/editGiaSP"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+
+                    android:background="@drawable/duongvien"
+                    android:hint="Giá"
+                    android:inputType="textCapWords"
+                    android:padding="10dp"
+                    android:textColor="#050505"
+                    android:textColorHint="@color/input_register_hint" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="#050505"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:text="Màu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+                <EditText
+
+                    android:id="@+id/editMauSP"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+
+                    android:background="@drawable/duongvien"
+                    android:hint="Màu"
+                    android:inputType="textCapWords"
+                    android:padding="10dp"
+                    android:textColorHint="@color/input_register_hint"
+                    android:textColor="#050505"   />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginLeft="50dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="#050505"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:text="Chất liệu "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+                <EditText
+
+                    android:id="@+id/editChatLieuSP"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+
+                    android:background="@drawable/duongvien"
+                    android:hint="Chất liệu"
+                    android:inputType="textCapWords"
+                    android:padding="10dp"
+                    android:textColor="#050505"
+                    android:textColorHint="@color/input_register_hint" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <TextView
+            android:textColor="#050505"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Mô tả"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+        <EditText
+            android:background="@drawable/duongvien"
+
+            android:id="@+id/editMoTaSP"
+            android:hint="Mô tả"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#050505"
+            android:textColorHint="@color/input_register_hint"
+            android:gravity="top|left"
+            android:inputType="textMultiLine"
+            android:overScrollMode="always"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:lines="4"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:scrollHorizontally="false" />
+        <TextView
+            android:textColor="#050505"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+        <EditText
+
+            android:textColor="#050505"
+            android:textColorHint="@color/input_register_hint"
+
+            android:hint="Link ảnh"
+            android:id="@+id/editAnhSP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/duongvien"
+            android:gravity="top|left"
+            android:inputType="textMultiLine"
+            android:overScrollMode="always"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:lines="4"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:scrollHorizontally="false" />
+    </LinearLayout>
+  <LinearLayout
+
+      android:layout_marginTop="30dp"
+      android:gravity="center"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+      <Button
+          android:background="#30645F"
+          android:textColor="#fff"
+          android:id="@+id/btnCapNhatSP"
+      android:layout_marginRight="20sp"
+          android:layout_gravity="center"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="UPDATE "></Button>
+      <Button
+          android:textColor="#fff"
+          android:background="#30645F"
+          android:id="@+id/btnxoaSP"
+          android:layout_marginLeft="20sp"
+          android:layout_gravity="center"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="DELETE "></Button>
+  </LinearLayout>
+</LinearLayout>

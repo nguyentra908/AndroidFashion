@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ChiTietDonHangActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarCTDH"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#30645F"
+        app:titleTextColor="#ffff"
+        app:title="Chi tiết đơn hàng"></androidx.appcompat.widget.Toolbar>
+    <ListView
+        android:id="@+id/listviewCTDH"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ></ListView>
+
+</LinearLayout>
